@@ -5,7 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
-// Context
+// Context Provider for accessory data
 import AccessoriesContextProvider from "./context/AccessoriesContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
