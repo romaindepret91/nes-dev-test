@@ -1,0 +1,14 @@
+div.secondary-title-component {
+  display: flex;
+  margin-top: 6rem;
+  justify-content: center;
+  background-color: #faf9f8;
+}
+
+h2.secondary-title__name {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 8px;
+  line-height: 48px;
+  margin: 30px;
+}

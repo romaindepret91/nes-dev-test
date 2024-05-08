@@ -1,0 +1,214 @@
+div.item {
+  width: 384px;
+  display: flex;
+  opacity: 0.5;
+  transition: 0.3s cubic-bezier(0, 0, 0.2, 1);
+  transition-property: width, opacity;
+  flex-shrink: 0;
+}
+
+div.item.activeParent {
+  opacity: 1;
+}
+
+div.card-expandable {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0 8px #17171a0d, 0 2px 8px #17171a14;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+}
+
+div.card-expandable.open {
+  width: 768px;
+}
+
+div.card-expandable__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+div.card-expandable__card.open {
+  flex-direction: row;
+  width: 768px;
+  position: absolute;
+}
+
+div.card-expandable__cover {
+  position: relative;
+  width: 100%;
+  margin: 0.5rem auto 0;
+  height: 10rem;
+}
+
+div.card-expandable__cover > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div.expandable__cover {
+  display: flex;
+}
+
+div.card-expandable__content {
+  font-family: NespressoLucas, Helvetica;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 0.5rem 2rem 2rem;
+  text-align: center;
+}
+
+div.card-expandable__content > h3.card-expandable-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.0625rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+div.card-expandable__content > p.card-expandable-headline {
+  color: #6f6f70;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.015625rem;
+  line-height: 1.5;
+}
+
+div.card-expandable__content > button.card-expandable-details-btn {
+  color: #876c43;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.015625rem;
+  line-height: 1.2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.375rem 0.375rem 0.5rem;
+  margin: -0.375rem -0.375rem -0.5rem;
+  transition: 0.3s ease-in-out;
+  transition-property: background-color, color, box-shadow;
+  border: 0;
+  background: none;
+  cursor: default;
+  outline: 0;
+  z-index: 1;
+}
+
+div.card-expandable__content > button.card-expandable-details-btn > span {
+  display: block;
+  position: relative;
+  min-height: 1.125rem;
+  color: #876c43;
+  cursor: pointer;
+  z-index: 10;
+}
+
+div.card-expandable__content > button.card-expandable-details-btn > span > a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  min-height: 1.125rem;
+  color: #876c43;
+  cursor: pointer;
+  z-index: 10;
+}
+
+div.card-expandable__content
+  > button.card-expandable-details-btn
+  > span::after {
+  background: #876c43;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -0.1875rem;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  transition-property: background-color, height;
+}
+
+div.card-expandable__content > div.card-expandable__priceWrapper {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+div.card-expandable__content
+  > div.card-expandable__priceWrapper
+  > div.card-expandable__price {
+  margin-bottom: 0.7rem;
+  color: #3d8705;
+  font-weight: bolder;
+  font-size: 1.25rem;
+  letter-spacing: 0.015625rem;
+  line-height: 1.2;
+}
+
+div.card-expandable__content
+  > div.card-expandable__priceWrapper
+  > button.card-expandable-addToCart-btn {
+  background: #3d8705 !important;
+  padding: 0.7rem 1.5rem;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border: 0 !important;
+  transition: 0.3s ease-in-out;
+  transition-property: background-color, color, box-shadow, border-color;
+  border-radius: 62.4375rem;
+  box-shadow: none;
+  position: relative;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0.015625rem;
+  line-height: 1.2;
+  color: #fff;
+  white-space: normal;
+  font-family: NespressoLucas !important;
+}
+
+div.card-expandable__content
+  > div.card-expandable__priceWrapper
+  > button.card-expandable-addToCart-btn:hover {
+  background: #326e04 !important;
+  box-shadow: none;
+}
+
+.AddToBagButtonLarge__label {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  div.card-expandable {
+    margin: 0 1.25rem;
+  }
+  div.card-expandable__card {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    max-width: 22.5rem;
+  }
+  div.card-expandable__cover {
+    height: 12.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  div.card-expandable__cover {
+    width: 18.75rem;
+  }
+}

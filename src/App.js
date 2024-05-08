@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import FoodAndBites from "./FoodAndBites";
 
-function App() {
+/**
+ *
+ * @returns main container including the F&B page component
+ */
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="main-container">
+      <header id="top"></header>
+      <main id="main">
+        <FoodAndBites></FoodAndBites>
+      </main>
     </div>
   );
 }
-
-export default App;

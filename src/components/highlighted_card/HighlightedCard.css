@@ -1,0 +1,54 @@
+div.highlighted-card-component {
+  padding-top: 2rem;
+  padding-bottom: 9rem;
+}
+
+div.highlighted-card-container {
+  display: flex;
+  justify-content: center;
+}
+
+div.highlighted-card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  margin: 0 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("https://www.nespresso.com/ecom/medias/sys_master/public/15679840256030/Travel-Mugs-Desktop-438x400-1.jpg");
+}
+div.highlighted-card-item:first-of-type {
+  background-image: url("https://www.nespresso.com/ecom/medias/sys_master/public/15680327221278/MicrosoftTeams-image-25-.png");
+}
+
+h2.highlighted-card-item__title {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  line-height: 48px;
+  margin: 30px;
+  text-align: center;
+}
+
+div.highlighted-card-item__cta > a {
+  min-width: 200px;
+  text-decoration: none;
+  lign-items: baseline;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0.25em;
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 0 100%;
+  justify-content: center;
+  outline: none;
+  padding: 12px 24px;
+  text-decoration: none;
+  transition: 0.25s ease;
+  background-color: #876c43;
+  border: 1px solid #876c43;
+  text-transform: none !important;
+}

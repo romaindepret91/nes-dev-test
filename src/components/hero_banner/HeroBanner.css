@@ -1,0 +1,28 @@
+div.hero-banner-container > section > div.cb-inner > h1 {
+  letter-spacing: 0.0625;
+}
+
+div.hero-banner-container > section > div.cb-inner > p {
+  letter-spacing: 0.015625;
+}
+
+div.hero-banner-container > section {
+  position: relative;
+  font-family: NespressoLucas;
+}
+
+div.hero-banner-container > section > div.cb-bg-img {
+  position: relative;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+div.hero-banner-container > section > div.cb-inner {
+  position: relative;
+}
+
+div.hero-banner-container > section > div.cb-inner > p > a {
+  text-decoration: none;
+}

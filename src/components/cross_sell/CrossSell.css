@@ -1,0 +1,102 @@
+div.cross-sell-component {
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  div.cross-sell-component {
+    max-width: 48rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  div.cross-sell-component {
+    max-width: 72rem;
+  }
+}
+div.carousel-wrapper {
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: content-box;
+  padding-top: 6rem;
+  width: 100%;
+}
+
+div.carousel {
+  position: relative;
+  overflow: visible;
+  margin: 0 auto;
+}
+
+div.cross-sell-wrapper {
+  position: relative;
+  padding-bottom: 0.75rem;
+  margin: 0 auto;
+  height: auto;
+}
+
+div.carousel > button.next-btn,
+div.carousel > button.prev-btn {
+  background: #17171a;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.25rem;
+  letter-spacing: 0.015625rem;
+  line-height: 1.2;
+  border: solid 1px transparent;
+  border-radius: 62.4375rem !important;
+  margin: 0 auto;
+  white-space: normal;
+  overflow: hidden;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  transition: 0.3s ease-in-out;
+  transition-property: background-color, color, border, box-shadow, text-shadow;
+  outline: 0;
+  padding: 0;
+  min-height: unset;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  z-index: 10;
+}
+
+div.carousel > button.next-btn.hidden,
+div.carousel > button.prev-btn.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.carousel > button.prev-btn {
+  top: 50%;
+  left: -28px;
+  transform: translate(50%, -50%);
+}
+
+div.carousel > button.next-btn {
+  top: 50%;
+  right: 18px;
+  transform: translate(50%, -50%);
+}
+
+div.carousel > button.next-btn:hover,
+div.carousel > button.prev-btn:hover {
+  background: #fff;
+  color: #17171a;
+  border: 1px #17171a solid;
+}
+
+div.carousel > button.prev-btn > svg,
+div.carousel > button.prev-btn > svg > path,
+div.carousel > button.next-btn > svg,
+div.carousel > button.next-btn > svg > path {
+  position: relative;
+  z-index: -10;
+}
+
+div.cross-sell-container {
+  position: relative;
+  min-height: 25.5rem;
+  display: flex;
+  transition: 0.3s ease-in-out left;
+  left: 0px;
+}
