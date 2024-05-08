@@ -11,6 +11,27 @@ import AccessoriesContextProvider from "./context/AccessoriesContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <head>
+      <meta
+        name="description"
+        content="Balance out the flavour of your coffee with Nespresso’s collection of chocolates, Amaretti biscuits and sugar sticks. Click to view our Food and Bite products."
+      />
+      <meta
+        property="og:title"
+        content="Food & Bites | Chocolates, Sugars and Biscuits | Nespresso Canada"
+      />
+      <meta
+        property="og:url"
+        content="https://www.nespresso.com/ca/en/accessories/food-and-bites"
+      />
+      <meta
+        property="og:description"
+        content="Balance out the flavour of your coffee with Nespresso’s collection of chocolates, Amaretti biscuits and sugar sticks. Click to view our Food and Bite products."
+      />
+      <title>
+        Food & Bites | Chocolates, Sugars and Biscuits | Nespresso Canada
+      </title>
+    </head>
     <AccessoriesContextProvider>
       <App />
     </AccessoriesContextProvider>

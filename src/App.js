@@ -1,3 +1,4 @@
+import React from "react";
 import FoodAndBites from "./FoodAndBites";
 
 /**
@@ -6,11 +7,13 @@ import FoodAndBites from "./FoodAndBites";
  */
 export default function App() {
   return (
-    <div id="main-container">
-      <header id="top"></header>
-      <main id="main">
-        <FoodAndBites></FoodAndBites>
-      </main>
-    </div>
+    <React.Fragment>
+      <div id="main-container">
+        <header id="top"></header>
+        <main id="main">
+          <FoodAndBites></FoodAndBites>
+        </main>
+      </div>
+    </React.Fragment>
   );
 }
